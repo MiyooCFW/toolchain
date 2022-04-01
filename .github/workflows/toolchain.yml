@@ -1,0 +1,16 @@
+name: Build External Toolchain
+
+on: [push, pull_request]
+jobs:   
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v3
+    - run: echo cwd; echo $PATH
+    - name: build
+      run: make sdk
+    - uses: actions/upload-artifact@v2
+      with:
+        name: miyoo-toolchain
+        path: output/images/arm-buildroot-linux-musleabi_sdk-buildroot.tar.gz
+        if-no-files-found: error # 'error', 'warn', 'ignore'; defaults to `warn`
