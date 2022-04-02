@@ -26,6 +26,7 @@ jobs:
     env:
       # github.repository as <account>/<repo>
       IMAGE_NAME: ${{ github.repository }}
+      DOCKERHUB_USERNAME: miyoocfw
     steps:
     - uses: actions/checkout@v3
 
@@ -41,8 +42,8 @@ jobs:
       with:
         # create token at https://hub.docker.com/settings/security
         # token needs to have read, write, and delete permissions - read and write only leads to a login error (wtf?)
-        # set values at https://github.com/[this repo]/settings/secrets/actions
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        # set value at https://github.com/MiyooCFW/toolchain/settings/secrets/actions
+        username: ${{ env.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     # Extract metadata (tags, labels) for Docker
