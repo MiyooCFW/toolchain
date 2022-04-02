@@ -11,7 +11,7 @@ COPY arm-buildroot-linux-musleabi_sdk-buildroot /opt/miyoo
 ENV CROSS_ROOT=/opt/miyoo
 ENV CROSS_TRIPLE=arm-buildroot-linux-musleabi
 ENV SYSROOT="${CROSS_ROOT}/${CROSS_TRIPLE}/sysroot"
-ENV PATH=":${PATH}:${CROSS_ROOT}/bin:${SYSROOT}/usr/bin"
+ENV PATH="${PATH}:${CROSS_ROOT}/bin:${SYSROOT}/usr/bin"
 ENV ARCH=arm
 ENV CROSS_COMPILE="${CROSS_TRIPLE}-"
 
