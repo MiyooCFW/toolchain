@@ -4,7 +4,7 @@ Build software for ARM-based miyoo consoles on linux x86 systems.
 
 See the [Releases](https://github.com/MiyooCFW/toolchain/releases) section for downloads or use the [miyoocfw/toolchain](https://hub.docker.com/r/miyoocfw/toolchain) docker image.
 
-See the [Build Source](https://github.com/TriForceX/MiyooCFW/wiki/Build-Source) page in the main repo's wiki for additional information.
+See the [Build Source](https://github.com/TriForceX/MiyooCFW/wiki/Build-Source) and [Making Games](https://github.com/TriForceX/MiyooCFW/wiki/Making-Games) pages in the main repo's wiki for additional information.
 
 ---
 
