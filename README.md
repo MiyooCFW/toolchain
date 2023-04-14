@@ -1,3 +1,7 @@
+# WARNING!
+
+### This repository is **Archive project** of building SDK for MiyooCFW! Updated & current method for building your own development kit under https://github.com/MiyooCFW/buildroot
+
 # MiyooCFW Cross-Compile Toolchain
 
 Build software for ARM-based miyoo consoles on linux x86 systems.
